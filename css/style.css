@@ -1,0 +1,31 @@
+/*+ no-beautify */
+#languages li {
+  color: brown; /* потомки #languages, подходящие под селектор  LI */
+}
+
+#languages > li {
+  color: black; /* первый уровень детей #languages подходящих под LI */
+}
+
+#e-slavic {
+  font-style: italic;
+}
+
+#e-slavic ~ li {
+  /* правые соседи #e-slavic с селектором LI */
+  color: red;
+}
+
+#latvian {
+  font-style: italic;
+}
+
+#latvian * {
+  /* потомки #latvian, подходяще под * (т.е. любые) */
+  font-style: normal;
+}
+
+#latvian + li {
+  /* первый правый сосед #latvian с селектором LI */
+  color: green;
+}
